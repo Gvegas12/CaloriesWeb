@@ -1,0 +1,32 @@
+.sidebar-container {
+  display: none;
+
+  & > * {
+    min-width: max-content;
+  }
+}
+
+// .LayoutSidebar-animation-enter {
+// }
+// .LayoutSidebar-animation-enter-active {
+// }
+.sidebar-animation-enter-done {
+  width: var(--sidebar-fullsize) !important;
+  .logo {
+    opacity: 1;
+  }
+  .sidebar-container {
+    display: block;
+  }
+}
+// .LayoutSidebar-animation-exit {
+// }
+.sidebar-animation-exit-active {
+  width: var(--sidebar-collapsed);
+  .logo {
+    opacity: 0;
+  }
+  .sidebar-container {
+    display: none;
+  }
+}

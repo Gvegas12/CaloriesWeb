@@ -1,0 +1,11 @@
+$size: 10dvw;
+
+.UILoader {
+	max-width: $size;
+	max-height: $size;
+
+	path {
+		fill: var(--primary-color);
+		border-radius: 100%;
+	}
+}

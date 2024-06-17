@@ -1,0 +1,9 @@
+.UIButton.black {
+	background: var(--dark-gray);
+}
+
+.UIButton.black.outlined {
+	color: var(--dark-gray);
+	background-color: transparent;
+	border: 1px solid var(--dark-gray);
+}

@@ -1,0 +1,50 @@
+.AuthByPhoneOrEmail {
+	padding: 100px 50px;
+	height: 100dvh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.title {
+	font: 600 var(--font-l);
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.recoveryPassword {
+	font-weight: 600;
+	color: var(--primary-color);
+}
+
+.toRegistration {
+	width: 80%;
+	text-align: center;
+	&,
+	* {
+		font: 600 var(--font-s-2);
+	}
+
+	.link {
+		color: var(--primary-color);
+	}
+}
+
+.btns {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 20px;
+}
+
+.Fields {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	margin: 20px 0;
+}
+
+.errorMessage {
+	margin-bottom: 20px;
+}

@@ -1,0 +1,8 @@
+/lib/scripts
+/lib/templates
+/config/vite
+vite.config.ts
+storybook-static
+loki.config.cjs
+workbox-config.js
+node_modules

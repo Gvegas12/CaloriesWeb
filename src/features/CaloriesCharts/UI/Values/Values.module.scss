@@ -1,0 +1,15 @@
+.name {
+	font: 500 var(--font-s-2);
+}
+
+.colorPoint {
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+}
+
+.Value {
+	display: flex;
+	align-items: center;
+	column-gap: 10px;
+}

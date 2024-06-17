@@ -1,0 +1,17 @@
+/* TODO Убрать лишнее */
+
+$global-sizes: (
+	--sidebar-padding-lr: 24px,
+	--sidebar-padding: 5px var(--sidebar-padding-lr),
+	--sidebar-fullsize: 336px,
+	--sidebar-collapsed: var(--burger-size),
+	--burger-size: 40px,
+	--border-radius: 4px,
+	--nav-bar-height: 40px,
+	--table-padding-tb: 80px,
+	--table-padding-right: 50px,
+	--table-header-height: 76px,
+	--table-title-height: 93px,
+	--table-footer-height: 60px,
+	--sidebar-header-height: 7.5dvh,
+);

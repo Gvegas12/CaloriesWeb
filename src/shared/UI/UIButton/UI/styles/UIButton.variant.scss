@@ -1,0 +1,55 @@
+@mixin ChangeTheme($c, $bg, $bc) {
+	color: $c;
+	background-color: $bg;
+	border-color: $bc;
+}
+
+// primary
+%primaryFilled {
+	@include ChangeTheme(
+		var(--primary-color),
+		var(--secondary-color),
+		var(--secondary-color)
+	);
+}
+
+.primary {
+	@extend %primaryFilled;
+}
+
+.primary.outlined {
+	@include ChangeTheme(
+		var(--secondary-color),
+		transparent,
+		var(--secondary-color)
+	);
+
+	&:hover {
+		@extend %primaryFilled;
+	}
+}
+
+// error
+%errorFilled {
+	@include ChangeTheme(
+		var(--primary-color),
+		var(--error-color),
+		var(--error-color)
+	);
+}
+
+.error {
+	@extend %errorFilled;
+}
+
+.error.outlined {
+	@include ChangeTheme(var(--error-color), transparent, var(--error-color));
+
+	&:hover {
+		@extend %errorFilled;
+	}
+}
+
+.clear {
+	@include ChangeTheme(var(--primary-text-color), transparent, transparent);
+}

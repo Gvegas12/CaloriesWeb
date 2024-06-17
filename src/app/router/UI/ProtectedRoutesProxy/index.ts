@@ -1,0 +1,1 @@
+export { ProtectedRoutesProxy } from "./ProtectedRoutesProxy";

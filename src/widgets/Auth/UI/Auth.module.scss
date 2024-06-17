@@ -1,0 +1,36 @@
+.Auth {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+
+	position: relative;
+	height: 100dvh;
+	padding: 3.2rem;
+	background: var(--primary-color);
+}
+
+.logo {
+	width: 200px;
+	height: 180px;
+	background-color: #d9d9d9;
+}
+
+.btns {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 20px;
+
+	width: 100%;
+}
+
+.description {
+	&,
+	* {
+		text-align: center;
+		font: 400 var(--font-s);
+		color: var(--secondary-color);
+	}
+}

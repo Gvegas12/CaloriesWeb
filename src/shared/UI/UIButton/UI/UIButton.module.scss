@@ -1,0 +1,35 @@
+.UIButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+
+	padding: 12px 60px;
+	text-align: center;
+
+	border-radius: 60px;
+	border: 1px solid var(--secondary-color);
+	color: var(--secondary-color);
+
+	font: 400 var(--font-m);
+
+	transition-property: color, background-color, border-color;
+	transition-duration: 0.3s;
+}
+
+@import "styles/UIButton.variant";
+@import "styles/UIButton.size";
+@import "styles/UIButton.color.scss";
+
+.disabled,
+.disabled:hover:disabled {
+	border-radius: 8px;
+	border: none;
+	background: var(--secondary-color, #f0f0f0);
+	color: #b6b6b6;
+	cursor: not-allowed;
+}
+
+.loader {
+	height: 24px;
+}

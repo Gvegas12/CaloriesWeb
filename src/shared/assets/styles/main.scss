@@ -1,0 +1,12 @@
+@import url("lib/reset.css");
+@import url("config/font.config.css");
+@import "variables/global";
+// @import "lib/sidebar-animation.scss";
+
+* {
+	font: var(--font-m);
+}
+
+body {
+	background-color: var(--primary-bg-color);
+}
