@@ -27,6 +27,6 @@
 			"@icons/*": ["src/shared/assets/img/icons/*"]
 		}
 	},
-	"include": ["src"],
+	"include": ["src", "src/features/RegistrationGreeting/UI/.tsx"],
 	"references": [{ "path": "./tsconfig.node.json" }]
 }

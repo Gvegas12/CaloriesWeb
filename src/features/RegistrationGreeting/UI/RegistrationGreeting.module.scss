@@ -1,0 +1,117 @@
+.RegistrationGreeting {
+	background: var(--primary-color);
+	height: 100dvh;
+	display: flex;
+	align-items: flex-end;
+}
+
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+
+	height: 90dvh;
+	width: 100%;
+	padding: 1.2rem 0 3.2rem 0;
+	border-radius: 15px 15px 0 0;
+	background: var(--secondary-color);
+}
+
+.header_box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 350px;
+}
+
+.title {
+	padding-top: 1.2rem;
+	text-align: center;
+	font-size: var(--font-line-s-2);
+	font-weight: 600;
+}
+
+.text {
+	padding-top: 1.25rem;
+	padding-bottom: 1.25rem;
+	text-align: center;
+	font-size: var(--font-line-s-2);
+	font-weight: 700;
+}
+
+.btn {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.description {
+	&,
+	* {
+		line-height: 19.5px;
+		width: 320px;
+		text-align: center;
+		font: 400 var(--font-size-m);
+		color: var(--dark-gray);
+	}
+}
+
+// RegistrationGreetingAgreement
+
+.border {
+	border: 1px solid #e7e7e7;
+	width: 375px;
+	margin: 20px 0;
+}
+
+.title_agreement {
+	width: 100%;
+	color: var(--dark-gray);
+	font-size: var(--font-size-m-2);
+	font-weight: 600;
+}
+
+.text_agreement {
+	color: var(--dark-gray);
+	font-size: var(--font-size-s-1);
+	line-height: 14.63px;
+	font-weight: 400;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.scroll {
+	height: 420px;
+	overflow-y: scroll;
+}
+
+li {
+	padding-top: 10px;
+	font-size: var(--font-size-s-1);
+	color: var(--dark-gray);
+	line-height: 14.63px;
+}
+
+.text_agreement_shadow {
+	padding-top: 20px;
+	font-size: var(--font-size-s-1);
+	color: var(--gray);
+	line-height: 14.63px;
+}
+
+.link_agreement {
+	width: 100%;
+	text-align: center;
+	padding-top: 75px;
+	font-size: var(--font-size-s-2);
+	color: var(--dark-green);
+	text-decoration: underline;
+}
+
+.btns_agreement {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

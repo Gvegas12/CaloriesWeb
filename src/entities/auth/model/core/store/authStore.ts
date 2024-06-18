@@ -10,11 +10,12 @@ import { IAuthStore } from "./authStore.types";
 const store = create(
 	devtools(
 		immer<IAuthStore>((set, get) => ({
-			isAuth: true,
+			isAuth: false,
 			checkIsAuth(navigate) {
 				const { isAuth } = get();
 				if (!isAuth) {
 					navigate(publicRoutePaths.auth);
+					console.log(set);
 				}
 			},
 		})),
