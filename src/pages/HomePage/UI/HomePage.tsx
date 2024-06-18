@@ -5,7 +5,7 @@ import { CaloriesCharts } from "@/features/CaloriesCharts";
 const HomePage: FC = () => {
 	return (
 		<div>
-			<CaloriesCharts />
+			<CaloriesCharts /> {/* TODO Waffle Nivo */}
 		</div>
 	);
 };
