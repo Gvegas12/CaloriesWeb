@@ -1,0 +1,14 @@
+[
+	{
+		"id": "clean_water",
+		"label": "чистой воды",
+		"value": 80,
+		"color": "#99B8FB"
+	},
+	{
+		"id": "other_water",
+		"label": "прочее",
+		"value": 20,
+		"color": "rgb(227, 239, 253)"
+	}
+]

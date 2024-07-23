@@ -1,0 +1,12 @@
+.EatingInfoCard {
+	border-radius: 15px;
+	padding: 10px 15px;
+	max-height: 72px;
+	overflow: hidden;
+
+	transition: max-height 0.4s ease-in-out;
+}
+
+.EatingInfoCard.active {
+	max-height: 100vh;
+}

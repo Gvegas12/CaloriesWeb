@@ -15,7 +15,6 @@ const getTopStylesheetValue = (
 ) => {
 	const percentValueByTotal = (value / total) * 100;
 	const res = 100 - percentValueByTotal;
-	console.log({ res });
 
 	return res;
 };

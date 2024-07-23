@@ -1,0 +1,1 @@
+export { FoodInfoCalendar } from "./FoodInfoCalendar";

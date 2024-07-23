@@ -1,0 +1,88 @@
+.EatingInfoCardDetails {
+	display: grid;
+	grid-template-columns: 1fr 0.6fr;
+	column-gap: 7.5px;
+	margin-top: 1rem;
+}
+
+.foodInfo,
+.times {
+	padding: 10px;
+	border-radius: 15px;
+	background-color: white;
+}
+
+.foodInfo {
+	&Header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 10px;
+
+		.foodName {
+			font-weight: 500;
+		}
+		.foodKcal {
+			font-size: 12px;
+		}
+	}
+
+	.energyValue {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.energyValueItem {
+			display: flex;
+			flex-direction: column;
+
+			.energyValueName,
+			.energyValueG,
+			.energyValueAlert {
+				font-weight: 500;
+				line-height: 1;
+				margin-top: 3px;
+			}
+
+			.energyValueName {
+				font-size: 8px;
+			}
+
+			.energyValueG {
+				font-size: 10px;
+			}
+
+			.energyValueAlert {
+				font-size: 5px;
+			}
+		}
+	}
+}
+
+.times {
+	flex-grow: 1;
+
+	&Title {
+		font-weight: 500;
+		line-height: 1;
+		margin-bottom: 10px;
+	}
+
+	&List {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&Item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		column-gap: 10px;
+	}
+
+	&Value {
+		font-size: 12px;
+		line-height: 1;
+		width: 70%;
+	}
+}

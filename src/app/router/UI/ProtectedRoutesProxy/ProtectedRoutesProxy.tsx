@@ -2,9 +2,7 @@ import { FC, ReactNode, useEffect } from "react";
 
 import { useNavigate } from "react-router-dom";
 
-import { AuthService } from "@/entities/auth";
-
-const { useAuthStore } = AuthService;
+import { useAuthStore } from "@/entities/auth";
 
 interface IProtectedRoutesProxyProps {
 	children: ReactNode;

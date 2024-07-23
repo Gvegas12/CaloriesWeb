@@ -1,0 +1,15 @@
+.FoodInfoCalendar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	[class*="ant-picker"] {
+		visibility: hidden;
+		position: absolute;
+		user-select: none;
+	}
+}
+
+.day {
+	font: 600 var(--font-m-2);
+}

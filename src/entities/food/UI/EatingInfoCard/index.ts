@@ -1,0 +1,1 @@
+export { EatingInfoCard } from "./EatingInfoCard";

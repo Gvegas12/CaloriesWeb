@@ -21,6 +21,7 @@
 		"@ant-design/icons": "^5.3.7",
 		"@hookform/resolvers": "^3.3.4",
 		"@neodrag/react": "^2.0.3",
+		"@nivo/pie": "^0.87.0",
 		"antd": "^5.18.1",
 		"axios": "^1.6.5",
 		"clsx": "^2.1.0",
