@@ -1,0 +1,15 @@
+$prl: 22px;
+$ptd: 10px;
+
+.UISelect {
+	height: max-content;
+	width: 184px;
+	[class^="ant-select-selector"] {
+		padding: $ptd $prl !important;
+		border-radius: 60px !important;
+	}
+
+	[class^="ant-select-arrow"] {
+		right: $prl !important;
+	}
+}

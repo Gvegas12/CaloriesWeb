@@ -5,10 +5,14 @@ import TimeIcon from "@icons/time.svg?react";
 
 import s from "./EatingInfoCardDetails.module.scss";
 
-export interface EatingInfoCardDetailsProps {}
+export interface EatingInfoCardDetailsProps {
+	onClick?: () => void;
+}
 
-export const EatingInfoCardDetails: FC<EatingInfoCardDetailsProps> = () => (
-	<div className={s.EatingInfoCardDetails}>
+export const EatingInfoCardDetails: FC<EatingInfoCardDetailsProps> = ({
+	onClick,
+}) => (
+	<div onClick={onClick} className={s.EatingInfoCardDetails}>
 		<div className={s.foodInfo}>
 			<div className={s.foodInfoHeader}>
 				<p className={s.foodName}>Яичница</p>
@@ -30,13 +34,29 @@ export const EatingInfoCardDetails: FC<EatingInfoCardDetailsProps> = () => (
 					<p className={s.energyValueAlert}>5 g сверху</p>
 				</div>
 				<div className={s.energyValueItem}>
-					<div className={s.bar} />
+					<div
+						className={s.bar}
+						style={{
+							height: "5px",
+							width: "100%",
+							background:
+								"linear-gradient(to right, pink 60%, paleturquoise 10%)",
+						}}
+					/>
 					<p className={s.energyValueName}>Жиры</p>
 					<p className={s.energyValueG}>220 g</p>
 					<p className={s.energyValueAlert}>20 g осталось</p>
 				</div>
 				<div className={s.energyValueItem}>
-					<div className={s.bar} />
+					<div
+						className={s.bar}
+						style={{
+							height: "5px",
+							width: "100%",
+							background:
+								"linear-gradient(to right, pink 90%, paleturquoise 10%)",
+						}}
+					/>
 					<p className={s.energyValueName}>Белки</p>
 					<p className={s.energyValueG}>40 g</p>
 					<p className={s.energyValueAlert}>В норме</p>

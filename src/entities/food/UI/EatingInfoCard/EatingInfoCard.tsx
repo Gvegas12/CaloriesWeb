@@ -1,6 +1,9 @@
 import { FC, useState } from "react";
 
 import clsx from "clsx";
+import { useNavigate } from "react-router-dom";
+
+import { protectedRoutePaths } from "@/shared/config/routes";
 
 import {
 	EatingInfoCardDetails,
@@ -25,10 +28,16 @@ export const EatingInfoCard: FC<EatingInfoCardProps> = ({
 	title,
 	bg,
 }) => {
+	const navigate = useNavigate();
 	const [isActive, setIsActive] = useState(false);
 
 	const onToggle = () => {
 		setIsActive(!isActive);
+	};
+
+	const onClickCard = () => {
+		const mockFoodId = 1;
+		navigate(`${protectedRoutePaths.food}/${mockFoodId}`);
 	};
 
 	return (
@@ -42,10 +51,10 @@ export const EatingInfoCard: FC<EatingInfoCardProps> = ({
 				description={description}
 				title={title}
 			/>
-			<EatingInfoCardDetails />
-			<EatingInfoCardDetails />
-			<EatingInfoCardDetails />
-			<EatingInfoCardDetails />
+			<EatingInfoCardDetails onClick={onClickCard} />
+			<EatingInfoCardDetails onClick={onClickCard} />
+			<EatingInfoCardDetails onClick={onClickCard} />
+			<EatingInfoCardDetails onClick={onClickCard} />
 		</div>
 	);
 };

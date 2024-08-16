@@ -1,4 +1,5 @@
 export const protectedRoutePaths = {
 	home: "/",
-	eatList: "/eatList",
+	foodList: "/foodList",
+	food: "/food", // + '/id' ===> foodId,
 };
