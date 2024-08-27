@@ -6,6 +6,20 @@
 	margin-top: 20px;
 }
 
+.barChart {
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+
+	.barLine {
+		flex-grow: 1;
+	}
+}
+
+.btn {
+	margin-top: 75px;
+}
+
 .text_l1 {
 	font: 600 var(--font-l);
 }

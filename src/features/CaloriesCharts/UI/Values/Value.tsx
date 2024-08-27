@@ -1,10 +1,10 @@
 import { FC } from "react";
 
-import { TColorValuesItem } from "../CaloriesCharts";
+import { TFoodElement } from "@/entities/food";
 
 import s from "./Values.module.scss";
 
-interface ValueProps extends TColorValuesItem {}
+interface ValueProps extends TFoodElement {}
 
 export const Value: FC<ValueProps> = ({ name, color }) => {
 	return (

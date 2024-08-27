@@ -20,7 +20,7 @@ export const FoodInfoCalendar: FC<FoodInfoCalendarProps> = () => {
 		<div className={s.FoodInfoCalendar}>
 			<DatePicker open={openCalendar} onOpenChange={setOpenCalendar} />
 			<CalendarIcon onClick={onToggleCalendar} />
-			<p className={s.day}>Сегодня</p>
+			<p className={s.day}>Сегодня</p> {/* TODO mock */}
 			<SearchOutlined />
 		</div>
 	);

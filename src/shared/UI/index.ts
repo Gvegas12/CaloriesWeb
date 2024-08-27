@@ -1,3 +1,4 @@
+import { UIBarLine as BarLine } from "./UIBarLine";
 import { UIBaseFieldText as BaseFieldText } from "./UIBaseFieldText";
 import { UIButton as Button } from "./UIButton";
 import { UIFieldText as FieldText } from "./UIFieldText";
@@ -14,4 +15,5 @@ export default {
 	Button,
 	BaseFieldText,
 	Select,
+	BarLine,
 };

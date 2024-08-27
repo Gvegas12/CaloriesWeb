@@ -1,12 +1,15 @@
 import { FC } from "react";
 
-import s from "./BarLine.module.scss";
+import clsx from "clsx";
+
+import s from "./UIBarLine.module.scss";
 
 interface BarLineProps {
 	value: number;
 	total: number;
 	name: string;
 	color: string;
+	className?: string;
 }
 
 const getTopStylesheetValue = (
@@ -19,9 +22,15 @@ const getTopStylesheetValue = (
 	return res;
 };
 
-export const BarLine: FC<BarLineProps> = ({ color, name, total, value }) => {
+export const UIBarLine: FC<BarLineProps> = ({
+	color,
+	name,
+	total,
+	value,
+	className,
+}) => {
 	return (
-		<div className={s.BarLine}>
+		<div className={clsx(s.BarLine, className)}>
 			<p className={s.value}>{value} g</p>
 			<div className={s.barWrapper}>
 				<div className={s.bar}>

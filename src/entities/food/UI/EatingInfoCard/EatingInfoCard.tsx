@@ -20,6 +20,7 @@ interface EatingInfoCardProps
 	extends Omit<EatingInfoCardHeaderProps, "onClickPlus">,
 		EatingInfoCardDetailsProps {
 	bg: string;
+	opening?: boolean;
 }
 
 export const EatingInfoCard: FC<EatingInfoCardProps> = ({
@@ -27,6 +28,7 @@ export const EatingInfoCard: FC<EatingInfoCardProps> = ({
 	description,
 	title,
 	bg,
+	opening = true,
 }) => {
 	const navigate = useNavigate();
 	const [isActive, setIsActive] = useState(false);
@@ -42,7 +44,7 @@ export const EatingInfoCard: FC<EatingInfoCardProps> = ({
 
 	return (
 		<div
-			className={clsx(s.EatingInfoCard, isActive && s.active)}
+			className={clsx(s.EatingInfoCard, opening && isActive && s.active)}
 			style={{ backgroundColor: bg }}
 		>
 			<EatingInfoCardHeader
@@ -51,10 +53,14 @@ export const EatingInfoCard: FC<EatingInfoCardProps> = ({
 				description={description}
 				title={title}
 			/>
-			<EatingInfoCardDetails onClick={onClickCard} />
-			<EatingInfoCardDetails onClick={onClickCard} />
-			<EatingInfoCardDetails onClick={onClickCard} />
-			<EatingInfoCardDetails onClick={onClickCard} />
+			{opening && (
+				<>
+					<EatingInfoCardDetails onClick={onClickCard} />
+					<EatingInfoCardDetails onClick={onClickCard} />
+					<EatingInfoCardDetails onClick={onClickCard} />
+					<EatingInfoCardDetails onClick={onClickCard} />
+				</>
+			)}
 		</div>
 	);
 };

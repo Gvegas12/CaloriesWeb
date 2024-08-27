@@ -7,7 +7,7 @@ import s from "./EatingInfoCardHeader.module.scss";
 export interface EatingInfoCardHeaderProps {
 	iconSrc: string;
 	title: string;
-	description: string;
+	description?: string;
 	onClickPlus: () => void;
 }
 

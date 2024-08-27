@@ -1,0 +1,14 @@
+.NutritionalValue {
+	margin-top: 20px;
+}
+
+.title {
+	margin-bottom: 10px;
+	font: 600 var(--font-l);
+}
+
+.tables {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}

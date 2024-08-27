@@ -1,0 +1,39 @@
+.NutritionalTable {
+	$br: 0.5rem;
+	border-radius: $br;
+	border: 1px solid;
+
+	.thead {
+		border-radius: $br $br 0 0;
+	}
+	.tbody {
+		border-radius: 0 0 $br $br;
+	}
+
+	.th,
+	.td {
+		padding: 10px 12px;
+		font: var(--font-s-2);
+	}
+	.th {
+		color: white;
+		font-weight: 600;
+	}
+
+	.td {
+		border: 1px solid;
+
+		&:nth-last-child(2) {
+			border-radius: 0 0 0 $br;
+		}
+		&:last-child {
+			border-radius: 0 0 $br 0;
+		}
+	}
+
+	.grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		text-align: center;
+	}
+}

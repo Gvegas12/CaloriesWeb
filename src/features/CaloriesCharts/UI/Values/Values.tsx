@@ -1,13 +1,13 @@
 import { FC } from "react";
 
-import { TColorValues } from "../CaloriesCharts";
+import { TFoodElements } from "@/entities/food";
 
 import { Value } from "./Value";
 
 import s from "./Values.module.scss";
 
 interface ValuesProps {
-	colorValues: TColorValues;
+	colorValues: TFoodElements;
 }
 
 export const Values: FC<ValuesProps> = ({

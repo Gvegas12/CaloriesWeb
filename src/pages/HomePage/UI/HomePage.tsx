@@ -1,25 +1,19 @@
 import { FC } from "react";
 
-import {
-	FoodInfoCalendar,
-	EatingInfoCard,
-	useFoodStore,
-} from "@/entities/food";
+import { Link } from "react-router-dom";
+
+import { EatingInfoCard, useFoodStore } from "@/entities/food";
 import { WaterInfo } from "@/entities/food/UI/WaterInfo";
 import { CaloriesCharts } from "@/features/CaloriesCharts";
+import { protectedRoutePaths } from "@/shared/config/routes";
+import { Header } from "@/widgets/Header";
 
 const HomePage: FC = () => {
 	const { eatingMap } = useFoodStore();
 
 	return (
 		<div>
-			<div
-				style={{
-					marginBottom: "20px",
-				}}
-			>
-				<FoodInfoCalendar />
-			</div>
+			<Header />
 			<CaloriesCharts /> {/* TODO Waffle Nivo */}
 			<div
 				style={{
@@ -45,6 +39,20 @@ const HomePage: FC = () => {
 				}}
 			>
 				<WaterInfo />
+			</div>
+			<div
+				style={{
+					marginTop: "20px",
+				}}
+			>
+				<Link to={protectedRoutePaths.medicines}>
+					<EatingInfoCard
+						opening={false}
+						bg="#ECE3FD"
+						title="Медикаменты"
+						iconSrc={"/icons/eggs.svg"}
+					/>
+				</Link>
 			</div>
 		</div>
 	);
