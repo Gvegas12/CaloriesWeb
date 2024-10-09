@@ -1,0 +1,11 @@
+POST http://localhost:3000/login 
+Content-Type: application/json
+Authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QxM0BnbWFpbC5jb20iLCJleHAiOjE3Mjg1MTU0MzIsInVzZXJpZCI6MH0.eocnBk7akQiUnKFSmAOVcD0ZXw03BRi1fkHVSnaD62k"
+
+
+
+{
+    "name" : "Sevinch",
+    "email" : "test13@gmail.com",
+    "password": "secret"
+}
