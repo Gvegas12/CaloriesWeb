@@ -25,3 +25,8 @@ func InitDB(cfg config.Config) {
 
 	log.Println("Database connection established")
 }
+
+// GetDB returns the database instance
+func GetDB() *gorm.DB {
+	return DB
+}

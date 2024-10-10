@@ -1,0 +1,3 @@
+curl -X POST http://localhost:4000/send-verification-code \
+     -H "Content-Type: application/json" \
+     -d '{"phone_number": "+36205522929"}'

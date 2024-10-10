@@ -7,6 +7,7 @@ import (
 	"Calories.com/TestAPI/database"
 	"Calories.com/TestAPI/handlers"
 	"Calories.com/TestAPI/middleware"
+	"Calories.com/TestAPI/smsAuth"
 	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 )
@@ -29,7 +30,7 @@ func main() {
 	router.POST("/login", handlers.Login)
 	router.POST("/signup", handlers.Signup)
 	router.POST("/request-password-reset", handlers.SendPasswordResetEmail)
-
+	router.POST("/send-verification-code", smsAuth.SendVerificationCode)
 	// Protected routes
 	protected := router.Group("/").Use(middleware.JWTAuthMiddleware())
 	{

@@ -2,6 +2,7 @@ POST http://localhost:4000/signup
 Content-Type: application/json
 
 {
-    "email":"gvegassam@gmail.com",
-    "password":"secret"
+    "email": "abdukarimovhasan4@gmail.com",
+    "password": "secret",
+    "phone_number": "+36205522929"
 }
