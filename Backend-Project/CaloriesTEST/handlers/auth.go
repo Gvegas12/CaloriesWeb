@@ -56,9 +56,22 @@ func Login(c *gin.Context) {
 
 // generate a JWT token with the user ID
 func GenerateToken(userID uint) (string, error) {
+
+	// Define the claims for the token
 	claims := jwt.MapClaims{
 		"user_id": userID,
 		"exp":     time.Now().Add(time.Hour * 72).Unix(), // Set an expiration time for the token
+		//"purpose": "passport_reset",
+	}
+
+	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
+	return token.SignedString([]byte(JWT_SECRET))
+}
+
+func GenerateResetToken(userID uint) (string, error) {
+	claims := jwt.MapClaims{
+		"user_id": userID,
+		"exp":     time.Now().Add(time.Hour * 1).Unix(), // Set a shorter expiration time
 	}
 
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)

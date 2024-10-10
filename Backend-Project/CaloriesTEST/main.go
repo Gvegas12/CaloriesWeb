@@ -28,6 +28,7 @@ func main() {
 	// Public routes
 	router.POST("/login", handlers.Login)
 	router.POST("/signup", handlers.Signup)
+	router.POST("/request-password-reset", handlers.SendPasswordResetEmail)
 
 	// Protected routes
 	protected := router.Group("/").Use(middleware.JWTAuthMiddleware())

@@ -1,8 +1,8 @@
 curl -X GET http://localhost:4000/user \
 -H "Content-Type: application/json" \
--H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Mjg2MzQwMTUsInVzZXJfaWQiOjJ9.DHUUuqeziSuTSY6Jq8jVFh9oFkkXd_c3BbjfNLpiC4g"
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3Mjg2NTI2MjMsInVzZXJfaWQiOjd9.vTJhWLO9SPViHE6vp5F8EAQs3ta8T6Gr6CCG1zgiEiM"
 
 {
-    "email":"test7@gmail.com",
-    "password":"test"
+    "email":"abdukarimovhasan8@outlook.com",
+    "password":"secret"
 }
